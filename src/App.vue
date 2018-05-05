@@ -8,9 +8,9 @@
                 <button @click="selectedColor = 'appRed'" class="btn btn-danger">Load Red Template</button>
                 <hr>
              
-                {{ selectedColor }}
                 <keep-alive>
                    <component :is="selectedColor">
+                       {{ selectedColor }}
                    </component>    
                 </keep-alive>
             </div>
